@@ -10,8 +10,16 @@
   }
 }
 
+/*
 .movie-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
   grid-gap: 15px;
+}
+*/
+.slick-next:before, .slick-prev:before {
+  font-size: 20px;
+  line-height: 1;
+  opacity: .75;
+  color: #0D3633;
 }
