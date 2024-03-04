@@ -9,7 +9,7 @@ const MovieDetail = () => {
     const {imdbID} = useParams();
     const dispatch = useDispatch();
     const data = useSelector(getMovieOrShowDetail);
-    console.log(data);
+    // console.log(data);
     useEffect(() => {
         dispatch(fetchAsyncMovieorShowDetail(imdbID));
         return () => {

@@ -6,9 +6,11 @@ import {fetchAsyncMovies, fetchAsyncShows} from '../../features/movies/movieSlic
 
 const Home = () => {
     const dispatch = useDispatch();
+    const movieText = "iron man";
+    const seriesText = "game of thrones";
     useEffect(() => {
-        dispatch(fetchAsyncMovies());
-        dispatch(fetchAsyncShows());
+        dispatch(fetchAsyncMovies(movieText));
+        dispatch(fetchAsyncShows(seriesText));
     },[dispatch]);
     return (
         <div>
