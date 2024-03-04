@@ -34,11 +34,9 @@ const Header = () => {
                         setTerm(e.target.value);
                     }}
                 />
-                <Link to='/' className='home-link'>
                     <button type="submit">
                         <i className="fa fa-search"></i>
                     </button>
-                </Link>
                 </form>
             </div>
             <div className='user-image'>
